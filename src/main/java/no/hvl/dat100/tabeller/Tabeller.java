@@ -18,10 +18,10 @@ public class Tabeller {
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		// TODO
-
-		tabell = new int[3];
-		String s = "[" + tabell[0] + "," + tabell[1] + "," + tabell[2] + "]";
+		// TODO får ikke denne til atm.
+		int[] tab2;
+		tab2 = tabell;
+		String s = "[" + tab2[0] + "," + tab2[1] + "," + tab2[2] + "]";
 		return s;
 	}
 
