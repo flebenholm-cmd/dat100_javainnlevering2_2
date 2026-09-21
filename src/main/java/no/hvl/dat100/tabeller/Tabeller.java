@@ -8,6 +8,8 @@ public class Tabeller {
 		// TODO
 		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
 
+		int[] tab1 = {1,2,2,3,4,5};
+		System.out.print(tab1);
 	}
 
 	// b)
