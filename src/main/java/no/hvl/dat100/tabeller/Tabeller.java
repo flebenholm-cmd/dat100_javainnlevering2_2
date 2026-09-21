@@ -7,12 +7,14 @@ public class Tabeller {
 
 		// TODO
 		int[] tab1 = {1,2,3,4,5};
+		System.out.print("[");
 		for (int i = 0; i<tab1.length; i++) {
 			int t1 = tab1[i];
-			System.out.print("[");
-			System.out.print(t1 + " , ");
-			System.out.print("]");
+
+			System.out.print(t1 + ", ");
+
 		}
+		System.out.print("]");
 	}
 
 	// b)
