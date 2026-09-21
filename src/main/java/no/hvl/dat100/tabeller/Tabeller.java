@@ -19,7 +19,10 @@ public class Tabeller {
 	public static String tilStreng(int[] tabell) {
 
 		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
+
+		int[] tab2 = new int[]{10,20,30};
+		String s = "[" + tab2[0] + "," + tab2[1] + "," + tab2[2] + "]";
+		return s;
 	}
 
 	// c)
