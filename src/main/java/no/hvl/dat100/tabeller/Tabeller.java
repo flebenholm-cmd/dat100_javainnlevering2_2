@@ -6,10 +6,13 @@ public class Tabeller {
 	public static void skrivUt(int[] tabell) {
 
 		// TODO
-		throw new UnsupportedOperationException("Metoden skrivUt ikke implementert");
-
-		int[] tab1 = {1,2,2,3,4,5};
-		System.out.print(tab1);
+		int[] tab1 = {1,2,3,4,5};
+		for (int i = 0; i<tab1.length; i++) {
+			int t1 = tab1[i];
+			System.out.print("[");
+			System.out.print(t1 + " , ");
+			System.out.print("]");
+		}
 	}
 
 	// b)
