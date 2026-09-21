@@ -20,8 +20,8 @@ public class Tabeller {
 
 		// TODO
 
-		int[] tab2 = new int[]{10,20,30};
-		String s = "[" + tab2[0] + "," + tab2[1] + "," + tab2[2] + "]";
+		tabell = new int[3];
+		String s = "[" + tabell[0] + "," + tabell[1] + "," + tabell[2] + "]";
 		return s;
 	}
 
