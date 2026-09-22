@@ -70,9 +70,18 @@ public class Tabeller {
 
 	// f)
 	public static int[] reverser(int[] tabell) {
+		// Deklarerer og initialiserer ny tabell.
+		int[] returTab = new int[tabell.length];
+		// Revers indeks
+		int revIndex;
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden reverser ikke implementert");
+		for (int i = 0; i<tabell.length; i++) {
+
+			revIndex = tabell.length - 1 - i;
+
+			returTab[i] = tabell[revIndex];
+		}
+		return returTab;
 	}
 
 	// g)
