@@ -20,10 +20,22 @@ public class Tabeller {
 	// b)
 	public static String tilStreng(int[] tabell) {
 
-		// TODO får ikke denne til atm.
-		int[] tab2;
-		tab2 = tabell;
-		String s = "[" + tab2[0] + "," + tab2[1] + "," + tab2[2] + "]";
+		// Start på s
+		String s = "[";
+
+		for (int i = 0; i<tabell.length; i++) {
+			// Ved siste element i tabellen
+			if (i == tabell.length-1) {
+				// Legger til tall uten komma i s
+				s += tabell[i];
+			} else {
+				// Legger til tall med komma i s
+				s += tabell[i] + ",";
+			}
+		}
+		// Ende på s
+		s += "]";
+
 		return s;
 	}
 
