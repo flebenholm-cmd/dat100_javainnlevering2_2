@@ -4,7 +4,10 @@ public class Matriser {
 
 	// a)
 	public static void skrivUt(int[][] matrise) {
+
+		// Går gjennom radene i matrisen: {rad[], rad[], ..., rad[]}
 		for (int[] rad : matrise) {
+			// Går gjennom alle elementene i hver rad, altså kolonnene.
 			for (int kol : rad) {
 				System.out.print(kol + " ");
 			}
@@ -14,10 +17,23 @@ public class Matriser {
 
 	// b)
 	public static String tilStreng(int[][] matrise) {
+		String s = "";
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden tilStreng ikke implementert");
-		
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j =  0; j < matrise[i].length; j++) {
+
+				// Hvis index viser til siste element i raden.
+				if (j == matrise[i].length - 1) {
+					s += matrise[i][j];
+
+				} else {
+					s += matrise[i][j] + " ";
+				}
+			}
+			// Legger til ny linje / rad
+			s += "\n";
+		}
+		return s;
 	}
 
 	// c)
