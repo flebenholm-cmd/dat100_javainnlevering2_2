@@ -89,7 +89,7 @@ public class Tabeller {
 
 		// TODO
 		boolean sortert = false;
-		for (int i = 0; i < tabell.length; i++ ) {
+		for (int i = 0; i < tabell.length-1; i++ ) {
 			if (tabell[i] < tabell[ i + 1 ]) {
 				sortert = true;
 			} else {
