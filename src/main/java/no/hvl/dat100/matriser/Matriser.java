@@ -1,5 +1,7 @@
 package no.hvl.dat100.matriser;
 
+import no.hvl.dat100.tabeller.Tabeller;
+
 public class Matriser {
 
 	// a)
@@ -62,10 +64,15 @@ public class Matriser {
 	// e)
 	public static int[][] speile(int[][] matrise) {
 
-		// TODO
+		int[][] returMat = new int[matrise.length][matrise[0].length];
 
-		throw new UnsupportedOperationException("Metoden speile ikke implementert");
-	
+		for (int i = 0; i < matrise.length; i++) {
+			for (int j = 0; j < matrise[i].length; j++) {
+				returMat[i][j] = matrise[j][i];
+			}
+
+		}
+		return returMat;
 	}
 
 	// f)
