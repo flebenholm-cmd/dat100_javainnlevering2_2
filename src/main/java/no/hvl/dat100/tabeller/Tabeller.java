@@ -87,16 +87,19 @@ public class Tabeller {
 	// g)
 	public static boolean erSortert(int[] tabell) {
 
-		// TODO
+		// deklarerer en sannhetsvariabel "sortert" og detter den til true
 		boolean sortert = true;
-		int i = 0;
-		for (i = 0; i < tabell.length-1; i++ ) {
-			if (tabell[i] >= tabell[ i + 1 ]) {
+
+		// lager en for-løkke som gå gjennom hele tabellen "tabell"
+		for (int i = 0; i < tabell.length-1; i++ ) {
+
+			/*setter sannhetsvariabelen "sortert" til false hvis tallet
+			etter indeks "i" er mindre eller lik tallet i indeks "i"*/
+			if (tabell[i + 1] <= tabell[i]) {
 				sortert = false;
-			} else {
-				sortert = true;
 			}
 		}
+		// returnerer sannhetsvariabelen "sortert"
 		return sortert;
 	}
 
