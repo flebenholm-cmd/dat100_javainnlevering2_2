@@ -94,8 +94,17 @@ public class Tabeller {
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden settSammen ikke implementert");
+		// Oppretter en ny tabell med lengde lik summen av de to parametertabellene
+		int[] resultat = new int[tabell1.length + tabell2.length];
+
+		// Kopierer elementene fra den første tabellen
+		System.arraycopy(tabell1, 0, resultat, 0, tabell1.length);
+
+		// Kopierer elementene fra den andre tabellen
+		System.arraycopy(tabell2, 0, resultat, tabell1.length, tabell2.length);
+
+		return resultat;
+
 
 	}
 }
