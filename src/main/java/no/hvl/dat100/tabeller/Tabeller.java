@@ -88,11 +88,10 @@ public class Tabeller {
 	public static boolean erSortert(int[] tabell) {
 
 		// TODO
-		boolean sortert = false;
-		for (int i = 0; i < tabell.length-1; i++ ) {
-			if (tabell[i] < tabell[ i + 1 ]) {
-				sortert = true;
-			} else {
+		boolean sortert = true;
+		int i = 0;
+		for (i = 0; i < tabell.length-1; i++ ) {
+			if (tabell[i] >= tabell[ i + 1 ]) {
 				sortert = false;
 			}
 		}
