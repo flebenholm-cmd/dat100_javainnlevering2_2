@@ -93,6 +93,8 @@ public class Tabeller {
 		for (i = 0; i < tabell.length-1; i++ ) {
 			if (tabell[i] >= tabell[ i + 1 ]) {
 				sortert = false;
+			} else {
+				sortert = true;
 			}
 		}
 		return sortert;
