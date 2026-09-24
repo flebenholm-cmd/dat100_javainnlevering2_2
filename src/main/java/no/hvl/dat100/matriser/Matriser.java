@@ -83,7 +83,6 @@ public class Matriser {
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
 
-
 		// Resultatet får like mange rader som a og kolonner som b.
 		int[][] resultat = new int[a.length][b[0].length];
 
