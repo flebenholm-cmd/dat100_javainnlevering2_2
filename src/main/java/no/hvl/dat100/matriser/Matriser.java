@@ -56,8 +56,19 @@ public class Matriser {
 	// d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden erLik ikke implementert");
+		boolean c = true;
+
+		if (a == b){
+
+		c = true;
+
+		}else{
+
+		c = false;
+
+		}
+		return c;
+
 		
 	}
 	
@@ -78,8 +89,19 @@ public class Matriser {
 	// f)
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden multipliser ikke implementert");
-	
+
+		// Resultatet får like mange rader som a og kolonner som b.
+		int[][] resultat = new int[a.length][b[0].length];
+
+		// Regner ut hvert element i resultatmatrisen.
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < b[0].length; j++) {
+				for (int k = 0; k < a[0].length; k++) {
+					resultat[i][j] += a[i][k] * b[k][j];
+				}
+			}
+		}
+
+		return resultat;
 	}
 }
