@@ -87,8 +87,20 @@ public class Tabeller {
 	// g)
 	public static boolean erSortert(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("Metoden erSortert ikke implementert");
+		// deklarerer en sannhetsvariabel "sortert" og detter den til true
+		boolean sortert = true;
+
+		// lager en for-løkke som gå gjennom hele tabellen "tabell"
+		for (int i = 0; i < tabell.length-1; i++ ) {
+
+			/*setter sannhetsvariabelen "sortert" til false hvis tallet
+			etter indeks "i" er mindre eller lik tallet i indeks "i"*/
+			if (tabell[i + 1] <= tabell[i]) {
+				sortert = false;
+			}
+		}
+		// returnerer sannhetsvariabelen "sortert"
+		return sortert;
 	}
 
 	// h)
